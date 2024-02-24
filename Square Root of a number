@@ -1,0 +1,12 @@
+int floorSqrt(int n)
+{
+    long long ans;
+
+    for(long long i =1 ; i*i<=n ; i++){
+
+        ans = i;
+
+    }
+
+  return ans;
+}
