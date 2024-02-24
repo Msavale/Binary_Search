@@ -1,0 +1,55 @@
+int roseGarden(vector<int> arr, int k, int m)
+{
+	int ans=0;
+
+    for(int i=0;i<arr.size();i++){
+
+        if(arr[i]>ans){
+
+            ans=arr[i];
+
+        }
+
+    }
+
+    int K=k;
+
+    int M=m;
+
+    for(int i=0;i<=ans;i++){
+
+        for(int j=0;j<arr.size();j++){
+
+            if(arr[j]<=i){
+
+                K--;
+
+                if(K==0){
+
+                    M--;
+
+                    K=k;
+
+                    if(M==0){
+
+                        return i;
+
+                        break;
+
+                    }
+
+                }
+
+            }
+
+            else {
+
+                K = k;
+            }
+        }
+
+        M = m;
+    }
+
+    return -1;
+}
