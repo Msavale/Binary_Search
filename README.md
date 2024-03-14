@@ -38,6 +38,6 @@ binary_search/
 ├── docs/                     # Documentation directory
 │   └── binary_search.md      # Detailed documentation on binary search algorithm
 │
-└── README.md                 # This README file
+
 
 
